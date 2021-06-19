@@ -14,12 +14,8 @@ chatbot = ChatBot(
         'chatterbot.logic.BestMatch',
         {
             'import_path':'chatterbot.logic.BestMatch',
-            'default_reponse':'Je suis désolé, mais je ne comprends pas, japprends encore',
-            'maximum_similarity_threshold': 0.80
+            'maximum_similarity_threshold': 0.90
         }
-    ],
-    preprocessors=[
-        'chatterbot.preprocessors.unescape_html'
     ],
     database_uri='sqlite:///database.sqlite3'
 )
